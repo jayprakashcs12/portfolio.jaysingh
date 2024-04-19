@@ -76,10 +76,10 @@ export default function Working() {
                 {educationHistory.map((edu, i) => (
                     <div key={i} className="space-y-2">
                         <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
-                            <div className="mb-2">
+                            <div className="mt-4">
                                 <b>{edu.institution} </b> | <span>{edu.degree}</span>
                             </div>
-                            <div className="mb-2">
+                            <div className="mt-4">
                                 {edu.duration}
                             </div>
                         </div>
