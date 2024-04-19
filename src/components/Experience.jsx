@@ -23,7 +23,7 @@ export default function Experience() {
         <span>I've more than 2+ years of Experience in below technologies.</span>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3 mt-5">
           {cardItem.map(({ id, logo, name }) => (
-            <div className=" flex flex-col items-center justify-center border-[1px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 cursor-pointer hover:scale-105 duration-300"
+            <div className="flex flex-col items-center justify-center border-[1px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 cursor-pointer hover:scale-105 duration-300"
               key={id}
             >
               <img src={logo} className="exp-img" alt={logo} />
