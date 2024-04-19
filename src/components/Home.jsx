@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <div name="Home" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-28">
+      <div name="Home" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mt-12 md:mt-40 space-y-2 order-2 md:order-1">
             <span className="text-xl">Welcome In My Feed</span>
