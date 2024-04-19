@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('../src/assets/css/pro.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Roboto';
+}

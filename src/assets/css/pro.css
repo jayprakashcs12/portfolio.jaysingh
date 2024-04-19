@@ -1,0 +1,18 @@
+.pro-text {
+  text-align: justify;
+}
+
+.pro-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.exp-img {
+  width: 80px;
+}
+
+.pro-list {
+  list-style-type: disc;
+}
