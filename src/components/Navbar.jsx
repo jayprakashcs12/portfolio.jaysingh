@@ -27,7 +27,7 @@ export default function Navbar() {
             </h1>
           </div>
           {/* desktop navbar */}
-          <div className="pro-nav">
+          <div className="cursor-pointer">
             <ul className="hidden md:flex space-x-8">
               {navItems.map(({ id, text }) => (
                 <li className="hover:scale-105 duration-200 cursor-pointer" key={id} >
