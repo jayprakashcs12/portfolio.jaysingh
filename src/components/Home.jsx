@@ -28,7 +28,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
               <div className="space-y-2">
                 <h1 className="font-bold text-left">Available on</h1>
-                <ul className="flex space-x-5">
+                <ul className="flex space-x-4">
                   <li>
                     <a href="https://github.com/jayprakashcs12/" target="_blank">
                       <FaGithub size={40} className="text-2xl rounded-lg py-2 px-3 md:text-3xl hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
@@ -48,7 +48,7 @@ export default function Home() {
               </div>
               <div className=" space-y-2">
                 <h1 className="font-bold text-left">Currently Working on</h1>
-                <div className="flex space-x-5">
+                <div className="flex space-x-4">
                   <SiMongodb size={45} className="text-3xl rounded-lg py-2 px-3 md:text-3xl hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
                   <SiExpress size={45} className="text-3xl rounded-lg py-2 px-3 md:text-3xl hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
                   <FaReact   size={45} className="text-3xl rounded-lg py-2 px-3 md:text-3xl hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
