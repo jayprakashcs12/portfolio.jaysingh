@@ -20,7 +20,8 @@ export default function Home() {
     return () => { window.removeEventListener('resize', handleResize); };
   }, []);
 
-  let proSize = deviceWidth > 768 ? 45 : (deviceWidth < 768 ? 35 : 40);
+  let proSize = deviceWidth > 768 ? 45 : (deviceWidth < 768 ? 30 : 40);
+  let padding = deviceWidth < 768 ? 'px-1 py-1' : 'px-3 py-2';
 
   return (
     <>
@@ -44,7 +45,7 @@ export default function Home() {
                   {socialMediaLinks.map((link, i) => (
                     <li key={i}>
                       <a href={link.socialUrl} target="_blank">
-                        <link.icon style={{ fontSize: proSize }} className="text-2xl rounded-lg py-2 px-3 md:text-3xl md:px-2 hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
+                        <link.icon style={{ fontSize: proSize }} className={`text-3xl rounded-lg md:text-2xl md:px-2 ${padding} hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer`} />
                       </a>
                     </li>
                   ))}
@@ -53,10 +54,10 @@ export default function Home() {
               <div>
                 <h1 className="font-bold text-left">Currently Working on</h1>
                 <div className="flex flex-row space-x-2 md:space-x-1 mt-2">
-                  <SiMongodb style={{ fontSize: proSize }} className="text-3xl rounded-lg py-2 px-3 md:text-3xl md:px-2 hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
-                  <SiExpress style={{ fontSize: proSize }} className="text-3xl rounded-lg py-2 px-3 md:text-3xl md:px-2 hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
-                  <FaReact   style={{ fontSize: proSize }} className="text-3xl rounded-lg py-2 px-3 md:text-3xl md:px-2 hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
-                  <FaNodeJs  style={{ fontSize: proSize }} className="text-3xl rounded-lg py-2 px-3 md:text-3xl md:px-2 hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer" />
+                  <SiMongodb style={{ fontSize: proSize }} className={`text-3xl rounded-lg md:text-2xl md:px-2 ${padding} hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer`} />
+                  <SiExpress style={{ fontSize: proSize }} className={`text-3xl rounded-lg md:text-2xl md:px-2 ${padding} hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer`} />
+                  <FaReact   style={{ fontSize: proSize }} className={`text-3xl rounded-lg md:text-2xl md:px-2 ${padding} hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer`} />
+                  <FaNodeJs  style={{ fontSize: proSize }} className={`text-3xl rounded-lg md:text-2xl md:px-2 ${padding} hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer`} />
                 </div>
               </div>
             </div>
