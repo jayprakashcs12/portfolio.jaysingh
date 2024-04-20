@@ -20,7 +20,7 @@ export default function Home() {
     return () => { window.removeEventListener('resize', handleResize); };
   }, []);
 
-  let proSize = deviceWidth > 768 ? 45 : (deviceWidth < 768 ? 30 : 40);
+  let proSize = deviceWidth > 768 ? 45 : (deviceWidth < 768 ? 40 : 30);
   let padding = deviceWidth < 768 ? 'px-1 py-1' : 'px-3 py-2';
 
   let proClass = `text-3xl rounded-lg md:text-2xl md:px-2 ${padding} hover:scale-105 duration-200 border-2 border-blue-400 hover:border-blue-800 hover:text-blue-500 cursor-pointer ${proSize}`;

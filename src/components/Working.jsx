@@ -3,7 +3,7 @@ import React from "react";
 export default function Working() {
   
     let educationHistory = [
-        { institution: 'Dr. A.P.J. A.K.T.U., Lucknow', degree: 'B. Tech (Computer Science)', duration: '2012-2016' },
+        { institution: 'Dr. A.P.J. A.K.T.U., Lucknow', degree: 'B.Tech (Computer Science & Engineering)', duration: '2012-2016' },
         { institution: 'U.P. Board, Prayagraj', degree: 'Intermediate (PCM)',  duration: '2007-2009' },
         { institution: 'U.P. Board, Prayagraj', degree: 'High School (Science)', duration: '2005-2007' }
     ];
