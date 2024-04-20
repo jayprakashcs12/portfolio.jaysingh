@@ -48,6 +48,11 @@ export default function Contact() {
       fname: "", email: "", mobile: "", message: ""
     });
   }
+  let buttonClassNames = [
+    'bg-blue-500 text-white rounded-xl mx-2 px-10 py-2 border-2 border-blue-500 hover:border-blue-500 hover:bg-white hover:text-blue-500 duration-300',
+    'bg-white text-red-500 hover:bg-red-500 hover:text-white rounded-xl mx-2 px-10 py-2 border-2 border-red-500 hover:border-red-500'
+  ];
+  let contactClassName = "text-gray-700 rounded-lg py-2 px-3 border-2 border-blue-400 hover:border-blue-800";
 
   return (
     <>
@@ -61,33 +66,28 @@ export default function Contact() {
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700 mb-1">Full Name</label>
               <input type="text" name="fname" value={fname} onChange={careersData} placeholder="Enter Your Full Name"
-                className="text-gray-700 rounded-lg py-2 px-3 border-2 border-blue-400 hover:border-blue-800" />
+                className={contactClassName} />
             </div>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700 mb-1">E-Mail ID</label>
               <input type="email" name="email" value={email} onChange={careersData} placeholder="Enter Your E-Mail ID"
-                className="text-gray-700 rounded-lg py-2 px-3 border-2 border-blue-400 hover:border-blue-800"
-              />
+                className={contactClassName} />
             </div>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700 mb-1">Mobile Number</label>
-              <input type="tel" name="mobile" value={mobile} onChange={careersData} placeholder="Enter Your Mobile Number" onKeyDown={handleKeyPress} maxLength={10}
-                className="text-gray-700 rounded-lg py-2 px-3 border-2 border-blue-400 hover:border-blue-800"
-              />
+              <input type="tel" name="mobile" value={mobile} onChange={careersData} placeholder="Enter Your Mobile Number"
+                className={contactClassName} onKeyDown={handleKeyPress} maxLength={10} />
             </div>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700 mb-1">Message</label>
               <textarea type="text" name="message" value={message} onChange={careersData} placeholder="Enter Your Message Here"
-                className="text-gray-700 rounded-lg py-2 px-3 border-2 border-blue-400 hover:border-blue-800"
-              />
+                className={contactClassName} />
             </div>
             <div className="flex justify-center">
-              <button type="submit" className="bg-blue-500 text-white rounded-xl mx-2 px-10 py-2 border-2 border-blue-500 
-                hover:border-blue-500 hover:bg-white hover:text-blue-500 duration-300" onClick={handleSubmit}>
+              <button type="submit" className={buttonClassNames[0]} onClick={handleSubmit}>
                 Send
               </button>
-              <button type="reset" className="bg-white text-red-500 hover:bg-red-500 hover:text-white rounded-xl mx-2 px-10 py-2 border-2 
-                border-red-500 hover:border-red-500" onClick={handleClear}>
+              <button type="reset" className={buttonClassNames[1]} onClick={handleClear}>
                 Clear
               </button>
             </div>

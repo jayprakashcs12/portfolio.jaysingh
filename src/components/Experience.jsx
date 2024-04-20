@@ -25,6 +25,8 @@ export default function Experience() {
 
   let padding = deviceWidth > 767 ? 'justify-between' : (deviceWidth < 767 ? 'justify-center' : 'justify-start');
 
+  let expClass ="flex flex-col items-center justify-center rounded-full border-[1px] w-[200px] h-[200px] shadow-md p-1 cursor-pointer hover:scale-105 duration-300 mx-2 my-2"
+
   return (
     <>
       <hr />
@@ -33,9 +35,7 @@ export default function Experience() {
         <span>I've more than 2+ years of Experience in below technologies.</span>
         <div className={`flex flex-wrap ${padding} my-3 mt-5`}>
           {cardItem.map(({ id, logo, name }) => (
-            <div className="flex flex-col items-center justify-center rounded-full border-[1px] w-[200px] h-[200px] shadow-md p-1 cursor-pointer hover:scale-105 duration-300 mx-2 my-2"
-              key={id}
-            >
+            <div key={id} className={expClass}>
               <img src={logo} className="exp-img" alt={logo} />
               <div className="">{name}</div>
             </div>
