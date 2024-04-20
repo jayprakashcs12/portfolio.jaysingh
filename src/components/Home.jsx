@@ -30,7 +30,7 @@ export default function Home() {
       <div name="Home" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mt-10 md:mt-40 space-y-2 order-2 md:order-1">
-            <h1 className="font-bold text-left">Jay Prakash Singh</h1>
+            <h1 className="text-3xl font-bold text-left">Jay Prakash Singh</h1>
             <div className="flex space-x-1 text-2xl md:text-2.5xl">
               <ReactTyped className="text-blue-700 font-bold" strings={["Front-End Developer", "ReactJS Developer", "UI Developer"]} 
                 typeSpeed={40} backSpeed={50} loop={true} />

@@ -1,5 +1,4 @@
 import React from "react";
-import Working from "./Working";
 
 export default function About() {
 
@@ -52,7 +51,6 @@ export default function About() {
         </>
         {/* Technical Skills Here */}
       </div>
-      <Working />
     </>
   );
 }
