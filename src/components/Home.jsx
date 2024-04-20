@@ -32,13 +32,12 @@ export default function Home() {
               <ReactTyped className="text-blue-700 font-bold" strings={["Front-End Developer", "ReactJS Developer", "UI Developer"]} 
                 typeSpeed={40} backSpeed={50} loop={true} />
             </div>
-            <br />
             <p className="pro-text">
               Hi, my name is Jay Prakash Singh. I am a passionate web developer with a keen eye for ReactJS, striving to create impactful and visually 
               stunning software solutions with an IT background.
             </p>
             {/* Social Here */}
-            <div className="flex flex-col md:flex-row justify-between align-middle space-y-6 md:space-y-0 mt-4">
+            <div className="flex flex-col md:flex-row justify-between align-middle space-y-6 md:space-y-0 mt-10">
               <div>
                 <h1 className="font-bold text-left">Available on</h1>
                 <ul className="flex flex-row space-x-2 md:space-x-1 mt-2">
@@ -64,7 +63,7 @@ export default function Home() {
             {/* Social Here */}
           </div>
           <div className="md:ml-48 md:mt-20 mt-6 order-1">
-            <img src={proPic} className="rounded-full md:h-[450px] md:w-[450px] mt-10 md:mt-0" alt={proPic} />
+            <img src={proPic} className="rounded-full md:h-[350px] md:w-[550px] mt-10 md:mt-0" alt={proPic} />
           </div>
         </div>
       </div>
