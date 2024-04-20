@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
 
@@ -26,9 +27,17 @@ export default function Contact() {
     if (!fname || !email || !mobile || !message) {
       toast.warning("Please fill the Required Field...!");
     } else {
-      toast.success("Form Submitted Successfully...!");
-      setCareerData({
-        fname: "", email: "", mobile: "", message: ""
+      emailjs.send('service_q5sj8qq', 'template_122wjce', { to_email: 'jayprakash199221@gmail.com',
+        from_name: fname, from_email: email, from_mobile: mobile, from_message: message
+      }, 'bhsKrqerDTX-guM48')
+      .then((response) => {
+        toast.success("Form Submitted Successfully...!");
+        setCareerData({
+          fname: "", email: "", mobile: "", message: ""
+        });
+      }, (error) => {
+        console.error('Failed to send email. Error:', error);
+        toast.error("Failed to submit form. Please try again later.");
       });
     }
   }
