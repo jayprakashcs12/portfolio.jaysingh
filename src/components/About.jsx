@@ -28,7 +28,7 @@ export default function About() {
         {/* Professional Summary Here */}
         <>
           <h1 className="text-3xl font-bold mb-5">About Us</h1>
-          <h2 className="text-green-600 font-semibold text-xl mt-5 mb-3"> Professional Summary </h2>
+          <h1 className="text-blue-500 font-semibold text-xl mt-5 mb-3"> Professional Summary </h1>
           <ol className="pro-list pro-text">
             {experienceList.map((item, i) => (
               <li key={i} className="ml-4 mb-1">{item.expText + "."}</li>
@@ -36,10 +36,10 @@ export default function About() {
           </ol>
         </>
         {/* Professional Summary Here */}
-
+        <hr className="border-b border-gray-400 border-opacity-20 mt-5" />
         {/* Technical Skills Here */}
         <>
-          <h1 className="text-green-600 font-semibold text-xl mt-5 mb-3">
+          <h1 className="text-blue-500 font-semibold text-xl mt-5 mb-3">
             Technical Skills
           </h1>
 
@@ -51,6 +51,7 @@ export default function About() {
         </>
         {/* Technical Skills Here */}
       </div>
+      <hr className="border-b border-gray-400 border-opacity-50" />
     </>
   );
 }

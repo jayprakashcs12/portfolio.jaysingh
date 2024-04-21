@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="pro-nav-img flex space-x-2">
             <img src={proPic} className="h-12 w-12 rounded-full" alt={proPic} />
             <h1 className="font-semibold text-xl cursor-pointer">
-              Jay Prakash <span className="text-green-500 text-2xl">Singh</span>
+              Jay Prakash <span className="text-blue-700 text-2xl">Singh</span>
               <p className="text-sm">Web Developer</p>
             </h1>
           </div>
@@ -46,7 +46,7 @@ export default function Navbar() {
           <div className="bg-white">
             <ul className="md:hidden flex flex-col h-screen items-center justify-center text-xl">
               {navItems.map(({ id, text }) => (
-                <li className="hover:scale-105 duration-200 font-semibold cursor-pointer" key={id}>
+                <li className="hover:scale-105 duration-200 font-semibold cursor-pointer mt-5" key={id}>
                   <Link onClick={() => setMenu(!menu)} to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link>
                 </li>
               ))}

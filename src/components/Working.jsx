@@ -51,7 +51,7 @@ export default function Working() {
 
         <>
             <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
-                <h1 className="text-green-600 font-semibold text-xl mt-5 mb-3">Working History</h1>
+                <h1 className="text-blue-500 font-semibold text-xl mt-5 mb-3">Working History</h1>
                 {/* Working History Here */}
                 {workingHistory.map((exp, i) => (
                     <div key={i} className="space-y-4 mt-5">
@@ -68,11 +68,14 @@ export default function Working() {
                                 <li key={taskIndex} className="ml-4 mb-1">{task  + "."}</li>
                             ))}
                         </ol>
+                        {i !== workingHistory.length - 1 && <hr className="border-b border-gray-400 border-opacity-20" />}
                     </div>
                 ))}
                 {/* Working History Here */}
-
-                <h1 className="text-green-600 font-semibold text-xl mt-5 mb-3">Education</h1>
+            </div>
+            <hr className="border-b border-gray-400 border-opacity-50" />
+            <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
+                <h1 className="text-blue-500 font-semibold text-xl mt-5 mb-3">Education</h1>
                 {educationHistory.map((edu, i) => (
                     <div key={i}>
                         <div className="flex flex-col md:flex-row justify-between align-middle space-y-6 md:space-y-0 mt-4">

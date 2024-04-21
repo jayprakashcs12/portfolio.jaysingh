@@ -30,14 +30,14 @@ export default function Contact() {
       emailjs.send('service_q5sj8qq', 'template_122wjce', { to_email: 'jayprakash199221@gmail.com',
         from_name: fname, from_email: email, from_mobile: mobile, from_message: message
       }, 'bhsKrqerDTX-guM48')
-      .then((response) => {
+      .then((resp) => {
         toast.success("Form Submitted Successfully...!");
         setCareerData({
           fname: "", email: "", mobile: "", message: ""
         });
       }, (error) => {
-        console.error('Failed to send email. Error:', error);
-        toast.error("Failed to submit form. Please try again later.");
+        console.error('Failed to send email.... ', error);
+        toast.error("Failed to submit form. Please try again later...!");
       });
     }
   }
@@ -56,7 +56,7 @@ export default function Contact() {
 
   return (
     <>
-      <hr />
+      <hr className="border-b border-gray-400 border-opacity-50" />
       <div name="Contact Us" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
         <h1 className="text-3xl font-bold mb-3">Contact Us</h1>
         <span>Please fill out the form below to contact Us</span>
