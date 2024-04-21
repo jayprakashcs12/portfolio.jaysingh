@@ -22,7 +22,7 @@ a:hover {
   font-weight: 600;
 }
 
-.container, .nav-container {
+.container {
 	background:#fff;
   transition: 0.1s;
   color: #000;
@@ -37,7 +37,18 @@ a:hover {
   background: #e2e8f0 !important;
 }
 
-.contact-container.dark, .nav-container.dark {
+.contact-container.dark {
+  background: #544a4a !important;
+  color: #fff !important;
+}
+
+.nav-container {
+	background:#fff;
+  transition: 0.1s;
+  color: #000;
+}
+
+.nav-container.dark {
   background: #544a4a !important;
   color: #fff !important;
 }
