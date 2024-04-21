@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Working() {
+export default function Working({ theme }) {
   
     let educationHistory = [
         { institution: 'Dr. A.P.J. A.K.T.U., Lucknow', degree: 'B.Tech (Computer Science & Engineering)', duration: '2012-2016' },
@@ -49,8 +49,8 @@ export default function Working() {
 
     return (
 
-        <>
-            <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
+        <div className={`container ${theme}`}>
+            <div name="About Us" className={`max-w-screen-2xl container mx-auto px-4 md:px-20 py-10 ${theme}`}>
                 <h1 className="text-blue-500 font-semibold text-xl mt-5 mb-3">Working History</h1>
                 {/* Working History Here */}
                 {workingHistory.map((exp, i) => (
@@ -74,8 +74,8 @@ export default function Working() {
                 {/* Working History Here */}
             </div>
             <hr className="border-b border-gray-400 border-opacity-50" />
-            <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
-                <h1 className="text-blue-500 font-semibold text-xl mt-5 mb-3">Education</h1>
+            <div name="About Us" className={`max-w-screen-2xl container mx-auto px-4 md:px-20 py-10 ${theme}`}>
+                <h1 className="text-blue-500 font-semibold text-xl mt-2 mb-3">Education</h1>
                 {educationHistory.map((edu, i) => (
                     <div key={i}>
                         <div className="flex flex-col md:flex-row justify-between align-middle space-y-6 md:space-y-0 mt-4">
@@ -89,6 +89,7 @@ export default function Working() {
                     </div>
                 ))}
             </div>
-        </>
+            <hr className="border-b border-gray-400 border-opacity-50" />
+        </div>
     )
 }

@@ -21,3 +21,23 @@ a:hover {
   color: #0000ff;
   font-weight: 600;
 }
+
+.container, .nav-container {
+	background:#fff;
+  transition: 0.1s;
+  color: #000;
+}
+
+.container.dark {
+  background: #222020 !important;
+  color: #fff !important;
+}
+
+.contact-container {
+  background: #e2e8f0 !important;
+}
+
+.contact-container.dark, .nav-container.dark {
+  background: #544a4a !important;
+  color: #fff !important;
+}

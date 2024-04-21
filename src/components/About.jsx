@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function About() {
+export default function About({theme}) {
 
   let experienceList = [
     { expText: 'Over 5+ Years of IT experience which includes 3+ Years of Extensive experience as a Front-End Developer, 1 Year as a PHP Developer & 2+ Year as a ReactJS Developer' },
@@ -23,8 +23,8 @@ export default function About() {
   ];
 
   return (
-    <>
-      <div name="About Us" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
+    <div className={`container ${theme}`}>
+      <div name="About Us" className={`max-w-screen-2xl container mx-auto px-4 md:px-20 py-10 ${theme}`}>
         {/* Professional Summary Here */}
         <>
           <h1 className="text-3xl font-bold mb-5">About Us</h1>
@@ -50,8 +50,8 @@ export default function About() {
           </ol>
         </>
         {/* Technical Skills Here */}
+        <hr className="border-b border-gray-400 border-opacity-50" />
       </div>
-      <hr className="border-b border-gray-400 border-opacity-50" />
-    </>
+    </div>
   );
 }

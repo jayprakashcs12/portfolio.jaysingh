@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-export function CommonWidth() {
+export const CommonWidth = (theme) => {
 
     let [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+    let borderColor = theme === 'dark' ? 'border-blue-400' : 'border-gray-400';
 
     useEffect(() => {
         const handleResize = () => {

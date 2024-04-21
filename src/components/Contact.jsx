@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import emailjs from 'emailjs-com';
 
-export default function Contact() {
+export default function Contact({theme}) {
 
   let [careerData, setCareerData] = useState({
     fname: "", email: "", mobile: "", message: ""
@@ -55,14 +55,13 @@ export default function Contact() {
   let contactClassName = "text-gray-700 rounded-lg py-2 px-3 border-2 border-blue-400 hover:border-blue-800";
 
   return (
-    <>
-      <hr className="border-b border-gray-400 border-opacity-50" />
-      <div name="Contact Us" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
+    <div className={`container ${theme}`}>
+      <div name="Contact Us" className={`max-w-screen-2xl mx-auto px-4 md:px-20 py-10 container ${theme}`}>
         <h1 className="text-3xl font-bold mb-3">Contact Us</h1>
         <span>Please fill out the form below to contact Us</span>
         <div className="flex flex-col items-center justify-center mt-3">
-          <form className="bg-slate-200 w-96 px-8 py-6 rounded-xl">
-            <h1 className="text-xl font-semibold mb-4 text-center">Send Your Message</h1>
+          <form className="bg-sky-200 w-96 px-8 py-6 rounded-xl">
+            <h1 className="text-xl font-semibold mb-4 text-center text-gray-700">Send Your Message</h1>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700 mb-1">Full Name</label>
               <input type="text" name="fname" value={fname} onChange={careersData} placeholder="Enter Your Full Name"
@@ -94,6 +93,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </>
+      <hr className="border-b border-gray-400 border-opacity-50" />
+    </div>
   );
 }
