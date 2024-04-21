@@ -16,3 +16,8 @@
 .pro-list {
   list-style-type: disc;
 }
+
+a:hover {
+  color: #0000ff;
+  font-weight: 600;
+}
