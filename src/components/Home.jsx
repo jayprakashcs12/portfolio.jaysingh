@@ -5,8 +5,7 @@ import proPic from "../assets/images/photo.avif";
 import { CommonWidth } from './CommonWidth';
 import { ReactTyped } from "react-typed";
 
-
-export default function Home({theme}) {
+export default function Home() {
 
   let deviceWidth = CommonWidth();
   let colAlign = deviceWidth >= 320 && deviceWidth <= 1199 ? 'flex-col-reverse' : '';
@@ -28,9 +27,9 @@ export default function Home({theme}) {
   let textAlign = deviceWidth > 767 ? 'text-left' : 'text-center';
   
   return (
-    <div className={`container ${theme}`}>
-      <div name="Home" className={`max-w-screen-2xl container mx-auto px-4 md:px-20 my-10 ${theme}`}>
-        <div className={`flex ${display} ${colAlign} ${theme}`}>
+    <>
+      <div name="Home" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
+        <div className={`flex ${display} ${colAlign}`}>
 
           {/* Profile Information Here */}
           <div className="mt-10 md:mt-10 space-y-2 order-2 md:order-1">
@@ -82,6 +81,6 @@ export default function Home({theme}) {
         </div>
       </div>
       <hr className="border-b border-gray-400 border-opacity-50" />
-    </div>
+    </>
   )
 }

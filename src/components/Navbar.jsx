@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { IoMoon, IoSunnyOutline } from "react-icons/io5";
 import proPic from "../assets/images/photo.avif";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
 
-export default function  Navbar({ theme, setTheme }){
+export default function Navbar() {
 
   let [menu, setMenu] = useState(false);
 
@@ -16,13 +15,9 @@ export default function  Navbar({ theme, setTheme }){
     { id: 4, text: "Contact Us", },
   ];
 
-  let toggleMode = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  }
-
   return (
-    <div className={`container ${theme}`}>
-      <div className={`max-w-screen-2xl mx-auto px-4 md:px-10 h-16 shadow-md fixed top-0 left-0 right-0 z-50 nav-container ${theme}`}>
+    <>
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-10 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
         <div className="flex justify-between items-center h-16">
           <div className="pro-nav-img flex space-x-2">
             <img src={proPic} className="h-12 w-12 rounded-full" alt={proPic} />
@@ -33,8 +28,7 @@ export default function  Navbar({ theme, setTheme }){
           </div>
           {/* desktop navbar */}
           <div className="cursor-pointer">
-            <ul className="hidden md:flex items-center space-x-8">
-              <button onClick={toggleMode}>{ theme === "light" ? <IoMoon /> : <IoSunnyOutline /> }</button>
+            <ul className="hidden md:flex space-x-8">
               {navItems.map(({ id, text }) => (
                 <li key={id} className="cursor-pointer">
                   <Link to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link>
@@ -49,9 +43,8 @@ export default function  Navbar({ theme, setTheme }){
         </div>
         {/* mobile navbar */}
         {menu && (
-          <div className={`container ${theme}`}>
+          <div className="bg-white">
             <ul className="md:hidden flex flex-col h-screen items-center justify-center text-xl">
-              <button onClick={toggleMode}>{ theme === "light" ? <IoMoon /> : <IoSunnyOutline /> }</button>
               {navItems.map(({ id, text }) => (
                 <li key={id} className="cursor-pointer mt-5">
                   <Link onClick={() => setMenu(!menu)} to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link>
@@ -62,6 +55,6 @@ export default function  Navbar({ theme, setTheme }){
         )}
         {/* mobile navbar */}
       </div>
-    </div>
+    </>
   );
 }
