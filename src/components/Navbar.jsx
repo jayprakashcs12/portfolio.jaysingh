@@ -30,7 +30,7 @@ export default function Navbar() {
           <div className="cursor-pointer">
             <ul className="hidden md:flex space-x-8">
               {navItems.map(({ id, text }) => (
-                <li className="hover:scale-105 duration-200 cursor-pointer" key={id} >
+                <li key={id} className="cursor-pointer">
                   <Link to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link>
                 </li>
               ))}
@@ -46,7 +46,7 @@ export default function Navbar() {
           <div className="bg-white">
             <ul className="md:hidden flex flex-col h-screen items-center justify-center text-xl">
               {navItems.map(({ id, text }) => (
-                <li className="hover:scale-105 duration-200 font-semibold cursor-pointer mt-5" key={id}>
+                <li key={id} className="cursor-pointer mt-5">
                   <Link onClick={() => setMenu(!menu)} to={text} smooth={true} duration={500} offset={-70} activeClass="active">{text}</Link>
                 </li>
               ))}
