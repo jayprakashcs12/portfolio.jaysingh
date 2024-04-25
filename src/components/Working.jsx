@@ -39,10 +39,13 @@ export default function Working() {
         {
             organization: 'Cybotrix Technology', position: 'Web Developer', techTitle: 'Organisation', duration: '09/17 - 10/19',
             tasks: [
-                'Involved in designing the user experience interface UI/UX strategy, UI requirements, and converting findings into UI designs',
-                'Develop user interfaces with the latest front-end technologies',
-                'Maintaining and optimizing mobile/web applications',
-                'Write clean and well-structured codes',
+                'Designed HTML templates for use on all pages on the website working with CSS Background, positioning, text, border, margin, padding, and table',
+                'Handled cross-browser compatibility issues & features to enhance user experience',
+                'Optimize web pages for maximum speed and boost their scalability',
+                'Updated the website from time to time for special requirements',
+                'Ensuring web design is optimized for smartphones',
+                'Extensive experience using Bootstrap for layout',
+                'Troubleshooting problems with performance'
             ]
         }
     ];
