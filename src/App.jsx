@@ -1,7 +1,6 @@
 import React from "react";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-import Working from "./components/Working";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -16,7 +15,6 @@ function App() {
         <Navbar />
         <Home />
         <About />
-        <Working />
         <Experience />
         <Contact />
         <Footer />
