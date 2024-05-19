@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
-import proPic from "../assets/images/photo.avif";
+import proPic from "../assets/images/photo1.png";
 import { CommonWidth } from './CommonWidth';
 import { ReactTyped } from "react-typed";
 
@@ -74,7 +74,7 @@ export default function Home() {
           
           {/* Profile Pic Here */}
           <div className={`mx-auto order-2 ${deviceWidth > 1119 ? 'ml-48 mt-20' : 'mt-10'}`}>
-            <img src={proPic} alt={proPic} className="rounded-full w-full h-auto" style={{ maxWidth: "100%", borderRadius: "50%" }} />
+            <img src={proPic} alt={proPic} className="rounded-full w-full h-auto" style={{ width:"300px", maxWidth: "100%", borderRadius: "30%" }} />
           </div>
           {/* Profile Pic Here */}
           

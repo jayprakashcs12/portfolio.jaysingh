@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import proPic from "../assets/images/photo.avif";
+import proPic from "../assets/images/photo1.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
@@ -19,7 +19,7 @@ export default function Navbar() {
     <>
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-10 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
         <div className="flex justify-between items-center h-16">
-          <div className="pro-nav-img flex space-x-2">
+          <div className="pro-nav-img flex justify-between items-center space-x-2">
             <img src={proPic} className="h-12 w-12 rounded-full" alt={proPic} />
             <h1 className="font-semibold text-xl cursor-pointer">
               Jay Prakash <span className="text-blue-700 text-2xl">Singh</span>
