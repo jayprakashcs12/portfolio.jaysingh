@@ -1,8 +1,8 @@
 import React from "react";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaNodeJs, FaReact } from "react-icons/fa";
+import { CommonWidth } from '../../general/CommonWidth';
+import proPic from "../../../assets/images/photo1.png";
 import { SiExpress, SiMongodb } from "react-icons/si";
-import proPic from "../assets/images/photo1.png";
-import { CommonWidth } from './CommonWidth';
 import { ReactTyped } from "react-typed";
 
 export default function Home() {

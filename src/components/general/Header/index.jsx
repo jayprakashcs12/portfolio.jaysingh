@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import proPic from "../assets/images/photo1.png";
+import proPic from "../../../assets/images/photo1.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
 
-export default function Navbar() {
+export default function Header() {
 
   let [menu, setMenu] = useState(false);
 

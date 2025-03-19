@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { CommonWidth } from './CommonWidth';
+import { CommonWidth } from "../CommonWidth";
 
 export default function Footer() {
 

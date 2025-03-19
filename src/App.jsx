@@ -1,18 +1,18 @@
 import React from "react";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
+import Experience from "./components/pages/Experience";
+import Contact from "./components/pages/Contact";
+import Footer from "./components/general/Footer";
+import Header from "./components/general/Header";
+import About from "./components/pages/About";
+import Home from "./components/pages/Home";
 import { Toaster } from "react-hot-toast";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Home from "./components/Home";
 
 function App() {
   return (
     <>
       <Toaster />
       <div>
-        <Navbar />
+        <Header />
         <Home />
         <About />
         <Experience />
